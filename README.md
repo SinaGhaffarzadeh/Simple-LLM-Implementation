@@ -21,39 +21,12 @@ In this notebook, you will learn about:
 - **spaCy**: Industrial-strength NLP library
 - Jupyter Notebook for code and documentation
 
-## 📦 Installation
-
-To run this notebook:
-
-1. Install required libraries:
-   ```bash
-   pip install spacy
-   ```
-
-2. Download the spaCy English model:
-   ```bash
-   python -m spacy download en_core_web_md
-   ```
-
-3. Open the notebook in Jupyter and follow along with the code and explanations.
-
 ## ✨ Features Demonstrated
 
 - Tokenization and vector inspection using spaCy
 - Embedding text into a vector space
 - Semantic similarity demonstration
 - Library comparison to help decide the best tool for your NLP use case
-
-## 🔍 Example
-
-```python
-import spacy
-nlp = spacy.load("en_core_web_md")
-doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
-
-for token in doc:
-    print(token.text, token.has_vector, token.vector_norm)
-```
 
 ## 📚 Further Reading
 
