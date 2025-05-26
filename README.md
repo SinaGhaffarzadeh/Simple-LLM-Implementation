@@ -21,21 +21,7 @@ In this notebook, you will learn about:
 - **spaCy**: Industrial-strength NLP library
 - Jupyter Notebook for code and documentation
 
-## 📦 Installation
-
-To run this notebook:
-
-1. Install required libraries:
-   ```bash
-   pip install spacy
-   ```
-
-2. Download the spaCy English model:
-   ```bash
-   python -m spacy download en_core_web_md
-   ```
-
-3. Open the notebook in Jupyter and follow along with the code and explanations.
+2. Open the notebook in Jupyter and follow along with the code and explanations.
 
 ## ✨ Features Demonstrated
 
@@ -44,25 +30,3 @@ To run this notebook:
 - Semantic similarity demonstration
 - Library comparison to help decide the best tool for your NLP use case
 
-## 🔍 Example
-
-```python
-import spacy
-nlp = spacy.load("en_core_web_md")
-doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
-
-for token in doc:
-    print(token.text, token.has_vector, token.vector_norm)
-```
-
-## 📚 Further Reading
-
-- [spaCy Documentation](https://spacy.io/usage)
-- [Hugging Face Transformers](https://huggingface.co/transformers/)
-- [NLTK](https://www.nltk.org/)
-- [Stanford NLP / Stanza](https://stanfordnlp.github.io/stanza/)
-- [Flair](https://github.com/flairNLP/flair)
-
-## 🧠 Author Notes
-
-This notebook is a foundation for deeper LLM explorations. It's a good starting point before transitioning to more complex models and workflows using Hugging Face or TensorFlow.
